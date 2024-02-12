@@ -4,8 +4,6 @@ import lombok.*;
 
 @Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
 @Entity
-public class Taux02 {
-    @Id  @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_Taux02;
-
+public class Taux02 extends DonneesCapteur{
+    private int value_Taux02;
 }

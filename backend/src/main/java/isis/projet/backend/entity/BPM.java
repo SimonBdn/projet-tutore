@@ -4,8 +4,6 @@ import lombok.*;
 
 @Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
 @Entity
-public class BPM {
-    @Id  @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_BPM;
-
+public class BPM extends DonneesCapteur{
+        private int value_BPM;
 }

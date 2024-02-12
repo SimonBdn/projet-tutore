@@ -4,7 +4,7 @@ import lombok.*;
 
 @Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
 @Entity
-public class PressionArterielle {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_PressionArterielle;
+public class PressionArterielle extends DonneesCapteur{
+    private int value_PressionArterielle;
+
 }
