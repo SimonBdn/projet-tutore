@@ -1,0 +1,14 @@
+{
+  "name": "projet-tutore",
+  "version": "1.0.0",
+  "description": "## Structure du projet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vuetify": "^3.5.6"
+  }
+}
