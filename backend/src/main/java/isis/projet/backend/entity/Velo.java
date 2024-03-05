@@ -21,3 +21,4 @@ public class Velo {
     @Column(unique=true)
     private String puissanceW;
 }
+// pas fini cest pas formément unique le modele et la puissance non plus
