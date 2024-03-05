@@ -1,24 +1,21 @@
 package isis.projet.backend.entity;
-
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Date;
+
 @Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
 @Entity
-
-public class Velo {
+public class Poids {
 
     @Id  @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_Velo;
+    private Integer id_Poids;
 
-    @Column
-    @NonNull
-    private String type_Velo;
+    @Column @NonNull
+    private Date date_mesure;
 
-    @Column
-    @NonNull
-    private String modele_Velo;
+    @Column @NonNull
+    private float value_Poids;
 
-    @Column
-    private String puissanceW_Velo;
+
 }
