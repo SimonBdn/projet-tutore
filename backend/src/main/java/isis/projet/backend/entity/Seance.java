@@ -1,9 +1,11 @@
 package isis.projet.backend.entity;
+import isis.projet.backend.dao.SeanceRepository;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
@@ -30,5 +32,10 @@ public class Seance {
     @Column
     private String formulaire_Fin_Seance;
 
-
+    public void enregistrerDonnéesCardiaques(List<DonneesCapteur> donneesCardiaques) {
+        for (DonneesCapteur donneeCardiaque : donneesCardiaques) {
+            donneeCardiaque.setSeance(this);
+        }
+        // Ne sauvegardez pas la séance ici, cela devrait être géré par la couche de service
+    }
 }
