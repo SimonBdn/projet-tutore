@@ -3,7 +3,7 @@ package isis.projet.backend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString
 @Entity
 public class Pathologie {
 
